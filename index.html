@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compound Interest</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css.css">
+
+
+
+</head>
+
+<body>
+    <h1>Compound Interest Calculator</h1>
+
+    <div id="container">
+        <div>Principal Contribution:<input type="number" id="principal"></div>
+        <div>Monthly Contribution:<input type="number" id="monthlyCont"></div>
+        <div>Annual Interest Rate (%):<input type="number" id="interestRate"></div>
+        <div>How often interest is compounded: <input type="number" id="timesCompounded"></div>
+        <!-- <div>How often interest is compounded:
+        <select name="timesCompounded" id="timesCompounded">
+                        <option value="yearly">Yearly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="monthly">Monthly</option>
+              </select>
+    </div> -->
+        <div>Total time of investment (years):<input type="number" id="totalTime"></div>
+        <div>Total Value: $ <span id="totalValue">0</span></div>
+        <button id="submit">Calculate</button><button id="reset">Reset</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

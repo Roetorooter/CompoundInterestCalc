@@ -17,13 +17,19 @@
 </head>
 
 <body>
-    <h1>Compound Interest Calculator</h1>
 
-    <div id="container">
-        <div>Principal Contribution:<input type="number" id="principal"></div>
-        <div>Monthly Contribution:<input type="number" id="monthlyCont"></div>
-        <div>Annual Interest Rate (%):<input type="number" id="interestRate"></div>
-        <div>How often interest is compounded: <input type="number" id="timesCompounded"></div>
+    <div class="input-group flex-container">
+
+        <h1>Compound Interest Calculator</h1>
+
+        <div id="divHeader">Principal Contribution:<input type="number" id="principal" class="form-control" placeholder="Principal Contribution"></div>
+
+        <div id="divHeader">Monthly Contribution:<input type="number" id="monthlyCont" class="form-control" placeholder="Monthly Contribution"></div>
+
+        <div id="divHeader">Annual Interest Rate (%):<input type="number" id="interestRate"></div>
+
+        <div id="divHeader">How often interest is compounded: <input type="number" id="timesCompounded"></div>
+
         <!-- <div>How often interest is compounded:
         <select name="timesCompounded" id="timesCompounded">
                         <option value="yearly">Yearly</option>
@@ -31,11 +37,17 @@
                         <option value="monthly">Monthly</option>
               </select>
     </div> -->
-        <div>Total time of investment (years): <input type="number" id="totalTime"></div>
-        <div>Total Value: $ <span id="totalValue">0</span></div>
-        <button id="submit">Calculate</button><button id="reset">Reset</button>
+
+        <div id="divHeader">Total time of investment (years):<input type="number" id="totalTime"></div>
+
+        <div id="divHeader">Total Value: $ <span id="totalValue">0</span></div>
+
+        <div>
+            <button class="btn btn-success" id="submit">Calculate</button><button class="btn btn-danger" id="reset">Reset</button>
+        </div>
     </div>
 
+    <footer></footer>
 
     <script src="script.js"></script>
 </body>

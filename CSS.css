@@ -1,3 +1,7 @@
+body {
+    background-color: #6b705c;
+}
+
 input {
     margin: 5px;
     padding: 2px;
@@ -9,4 +13,22 @@ input {
 
 button {
     margin-left: 5px;
+}
+
+#submit {
+    margin-right: 2px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50rem;
+    border: 2px solid silver;
+    background-color: #ffe8d6;
+}
+
+#divHeader {
+    color: #2b3a39;
 }

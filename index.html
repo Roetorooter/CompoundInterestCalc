@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css.css">
 
 
@@ -18,19 +20,32 @@
 
 <body>
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0">Equations</span>
+                <a class="navbar-brand" href="#">Compound Interest</a>
+                <a class="navbar-brand" href="index.html">Area</a>
+            </div>
+        </nav>
+    </header>
+
     <div class="input-group flex-container">
 
         <h1>Compound Interest Calculator</h1>
 
-        <div id="divHeader">Principal Contribution:<input type="number" id="principal" class="form-control" placeholder="Principal Contribution"></div>
 
-        <div id="divHeader">Monthly Contribution:<input type="number" id="monthlyCont" class="form-control" placeholder="Monthly Contribution"></div>
+        <form action="">
+            <div id="divHeader">Principal Contribution:<input type="number" id="principal" class="form-control" placeholder="Principal Contribution" required></div>
 
-        <div id="divHeader">Annual Interest Rate (%):<input type="number" id="interestRate"></div>
+            <div id="divHeader">Monthly Contribution:<input type="number" id="monthlyCont" class="form-control" placeholder="Monthly Contribution" required></div>
 
-        <div id="divHeader">How often interest is compounded: <input type="number" id="timesCompounded"></div>
+            <div id="divHeader">Annual Interest Rate (%):<input type="number" id="interestRate" required></div>
 
-        <!-- <div>How often interest is compounded:
+            <div id="divHeader">How often interest is compounded: <input type="number" id="timesCompounded" required>
+            </div>
+
+            <!-- <div>How often interest is compounded:
         <select name="timesCompounded" id="timesCompounded">
                         <option value="yearly">Yearly</option>
                         <option value="quarterly">Quarterly</option>
@@ -38,18 +53,33 @@
               </select>
     </div> -->
 
-        <div id="divHeader">Total time of investment (years):<input type="number" id="totalTime"></div>
+            <div id="divHeader">Total time of investment (years):<input type="number" id="totalTime" required></div>
 
-        <div id="divHeader">Total Value: $ <span id="totalValue">0</span></div>
+            <div id="divHeader">Total Value: $ <span id="totalValue">0</span></div>
 
-        <div>
-            <button class="btn btn-success" id="submit">Calculate</button><button class="btn btn-danger" id="reset">Reset</button>
-        </div>
+            <div>
+                <button class="btn btn-success" id="submit">Calculate</button>
+            </div>
+        </form>
+        <button class="btn btn-danger" id="reset" required>Reset</button>
     </div>
 
-    <footer></footer>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0">Roetorooter</span>
+                <a class="navbar-brand" href="https://github.com/Roetorooter">
+                    <i style="font-size:24px" class="fa" width="30" height="24">&#xf09b;</i>
+                </a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/eric-roeters-7b4a4375/">
+                    <i style="font-size:24px" class="fa">&#xf08c;</i>
+                </a>
+            </div>
+        </nav>
+    </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

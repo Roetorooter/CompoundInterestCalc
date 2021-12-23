@@ -24,11 +24,35 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
     margin: 0 50rem;
-    border: 2px solid silver;
+    padding: 5%;
     background-color: #ffe8d6;
+    box-shadow: 2px 2px 10px #b7b7a4;
 }
 
 #divHeader {
     color: #2b3a39;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #cb997e;
+    color: #6b705c;
+}
+
+a {
+    color: #6b705c;
+}
+
+a:hover {
+    color: #b7b7a4;
+}
+
+header {
+    width: 100%;
+    background-color: #cb997e;
+    color: #6b705c;
 }
